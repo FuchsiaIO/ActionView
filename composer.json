@@ -1,8 +1,8 @@
 {
   "minimum-stability": "dev",
-  "name": "FuchsiaIO/ActiveView",
+  "name": "FuchsiaIO/ActionView",
   "type": "library",
-  "description": "Active View Implementation.",
+  "description": "Action View Implementation.",
   "license": "MIT",
   "keywords": ["FuchsiaIO", "ActionView", "view"],
   "authors": [
