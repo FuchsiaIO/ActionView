@@ -11,7 +11,7 @@
  * @version v1.0.1
  */
    
-require_once 'src/config.php';
+require_once dirname(__FILE__).'/src/config.php';
 
 if(USE_HAML)
   require_once 'vendor/haml/lib/MtHaml/Autoloader.php';
