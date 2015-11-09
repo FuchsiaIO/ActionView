@@ -3,7 +3,7 @@
 /**
  * Template not found exception
  */
-namespace ActionController\Exception;
+namespace ActionView\Exception;
 
 /**
 * Tempalate Not Found Exception
@@ -12,7 +12,7 @@ namespace ActionController\Exception;
 *
 * @since        v0.0.1
 * @version      v0.0.1
-* @package      ActionController
+* @package      ActionView
 * @subpackage   Exception
 * @author       Benjamin J. Anderson <andeb2804@gmail.com>
 */

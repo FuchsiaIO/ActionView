@@ -2,6 +2,7 @@
   <testsuites>
     <testsuite name="ActionView">
       <file>view/concrete_view_test.php</file>
+      <file>registry/template_registry_test.php</file>
     </testsuite>
   </testsuites>
 </phpunit>
