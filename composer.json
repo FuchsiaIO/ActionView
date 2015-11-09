@@ -1,0 +1,34 @@
+{
+  "minimum-stability": "dev",
+  "name": "FuchsiaIO/ActiveView",
+  "type": "library",
+  "description": "Active View Implementation.",
+  "license": "MIT",
+  "keywords": ["FuchsiaIO", "ActionView", "view"],
+  "authors": [
+    {
+      "name": "Benjamin J. Anderson",
+      "email": "andeb2804@gmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "url": "https://github.com/arnaud-lb/MtHaml",
+      "type": "git"
+    }
+  ],
+  "require": {
+    "mnsami/composer-custom-directory-installer": "1.0.*",
+    "mthaml/mthaml": "@dev"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-nightly": "master"
+    }
+  },
+  "extra":{
+    "installer-paths":{
+      "./vendor/haml": ["mthaml/mthaml"]
+    }
+  }
+}

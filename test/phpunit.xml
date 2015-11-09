@@ -1,0 +1,7 @@
+<phpunit bootstrap="bootstrap.php" backupGlobals="false">
+  <testsuites>
+    <testsuite name="ActionView">
+      <file>view/concrete_view_test.php</file>
+    </testsuite>
+  </testsuites>
+</phpunit>
