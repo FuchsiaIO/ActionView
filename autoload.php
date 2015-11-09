@@ -14,7 +14,7 @@
 require_once dirname(__FILE__).'/src/config.php';
 
 if(USE_HAML)
-  require_once 'vendor/haml/lib/MtHaml/Autoloader.php';
+  require_once dirname(__FILE__).'/vendor/haml/lib/MtHaml/Autoloader.php';
 
 spl_autoload_register(function($class){
   $class = strtolower(preg_replace('/\B([A-Z])/', '_$1', str_replace(ACTION_VIEW_NAMESPACE, '', $class)));
