@@ -12,7 +12,9 @@
  */
    
 require_once dirname(__FILE__).'/src/config.php';
-require_once dirname(__FILE__).'/vendor/autoload.php';
+require_once dirname(__FILE__).'/vendor/haml/lib/MtHaml/Autoloader.php';
+
+MtHaml\Autoloader::register();
 
 spl_autoload_register(function($class){
   $class = strtolower(preg_replace('/\B([A-Z])/', '_$1', str_replace(ACTION_VIEW_NAMESPACE, '', $class)));
