@@ -156,4 +156,15 @@ class ConcreteViewTest extends \PHPUnit_Framework_TestCase
     $expect = 'Hello Foo!';
     $this->assertSame($expect, $actual);
   }
+  
+  public function testHamlFileExtensionParsesAsHaml()
+  {
+    $view = new \ActionView\View\Concrete(
+      new \ActionView\Registry\TemplateRegistry(array('haml' => __DIR__ . '/templates/haml_template.haml.php')),
+      new \ActionView\Registry\TemplateRegistry
+    );
+    $view->setView('haml');
+    $this->assertContains('<div>', $view->__invoke());
+  }
+  
 }
