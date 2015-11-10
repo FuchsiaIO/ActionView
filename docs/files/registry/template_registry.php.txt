@@ -39,6 +39,7 @@ class TemplateRegistry
    * Registers a template
    *
    * @since v0.0.1
+   * @since v0.0.2 Automatically preprocesses HAML files when .haml is in the filename
    * @param string $name An alias to the template
    * @param string $spec The file template path
    */
@@ -56,7 +57,7 @@ class TemplateRegistry
           throw new \ActionView\Exception\TemplateNotFound('Unable to load view: '.$__FILE__);
         }
         
-        if(USE_HAML)
+        if(USE_HAML || strstr($__FILE__, '.haml'))
         {
           $haml = new \MtHaml\Environment('php');
           $hamlExecutor = new \MtHaml\Support\Php\Executor($haml, array(
