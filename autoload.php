@@ -10,9 +10,17 @@
  * @since 1.0.0
  * @version v1.0.1
  */
-   
+
 require_once dirname(__FILE__).'/src/config.php';
-require_once dirname(__FILE__).'/vendor/haml/lib/MtHaml/Autoloader.php';
+
+if(defined('FUCHSIA_ROOT_PATH'))
+{
+  require_once FUCHSIA_ROOT_PATH.'/vendor/autoload.php';
+}
+else
+{
+  require_once dirname(__FILE__).'/vendor/haml/lib/MtHaml/Autoloader.php';
+}
 
 MtHaml\Autoloader::register();
 
