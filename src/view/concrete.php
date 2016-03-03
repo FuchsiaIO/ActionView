@@ -50,7 +50,7 @@ class Concrete extends Base
    * their own.
    * @return string
    */
-  protected function render($name, $vars = array())
+  public function render($name, $vars = array())
   {
     $vars['view'] = $this;
     ob_start();
